@@ -18,8 +18,12 @@ a {
 	text-align: center;
 }
 .Menu {
+	margin: 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	margin-right: 5px;
 		float: left;
-		width: 33%;
+		width: 32%;
 		border: 2px solid #dddddd;
 		border-top-width:5px;
 }
