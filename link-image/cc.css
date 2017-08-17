@@ -1,6 +1,6 @@
 h2 {color: rgb(155,176,134);} h3 {color: rgb(115,153,185);} #checkmate {color: rgb(254, 76, 121)} strong {color :rgb(143, 192, 243)} #inshort {color:   rgb(255, 102, 153)} #spoiler {color:   rgb(255, 102, 102)}
      p {text-indent: 15Px;text-align: justify; font-size:15px;}
-     img {max-width: 500;
+     img {max-width: 500px;
      	margin: auto;
     	display: block;}
          a:link{color: blue;}
