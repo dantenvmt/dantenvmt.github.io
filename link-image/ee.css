@@ -7,9 +7,8 @@ h2 {color: rgb(155,176,134);} h3 {color: rgb(115,153,185);} #checkmate {color: r
      p {text-indent: 15Px;text-align: justify; font-size:15px;}
      img {max-width: 500px;
      	margin: auto;
-    	display: block;}
+    	}
          a:link{color: blue;}
     a:visited{color: blue;}
     a:hover{color: blue}
     a:active{color: red}
-        	   }
