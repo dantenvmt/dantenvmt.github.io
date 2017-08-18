@@ -17,11 +17,9 @@ a {
 	text-align: center;
 }
 .Menu {
-	margin-top: 10px;
-	margin-bottom: 20px;
-	margin-right: 5px;
+	
 		float: left;
-		width: 32.5%;
+		width: 33.3333%;
 		border: 2px solid #dddddd;
 		border-top-width:5px;
 
@@ -41,5 +39,5 @@ a {
 	max-width: 1300px;
 	margin: auto;
 }
-.More {max-width:1000px;
+.more {max-width:1000px;
 	margin:auto;}
