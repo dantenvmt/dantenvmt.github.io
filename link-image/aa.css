@@ -1,5 +1,4 @@
 * {
-	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 } 
@@ -18,23 +17,29 @@ a {
 	text-align: center;
 }
 .Menu {
-	margin: 15px;
+	margin: 15
+	px;
 	margin-top: 10px;
 	margin-bottom: 20px;
 	margin-right: 5px;
 		float: left;
-		width: 32%;
+		width: 32.5%;
 		border: 2px solid #dddddd;
 		border-top-width:5px;
+
 }
 .info {
 	border-color: #76a7fa;
 }
 .list {
 	border-color: #f9b256;
-	    height: 210px;
+	    height: 243px;
 }
 .genre {
 	border-color: #4dbfd9;
-	    height: 210px;
+	    height: 243px;
+}
+.all {
+	max-width: 1300px;
+	margin: auto;
 }
