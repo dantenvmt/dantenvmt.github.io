@@ -1,15 +1,52 @@
 * {
+    margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 } 
 
-h2 {color: rgb(155,176,134);} h3 {color: rgb(115,153,185);} #checkmate {color: rgb(254, 76, 121)} strong {color :rgb(143, 192, 243)} #inshort {color:   rgb(255, 102, 153)} #spoiler {color:   rgb(255, 102, 102)}
+h2 {color: rgb(155,176,134);} 
+h3 {color: rgb(115,153,185);} 
+#checkmate {color: rgb(254, 76, 121)} strong {color :rgb(143, 192, 243)} #inshort {color:   rgb(255, 102, 153)} #spoiler {color:   rgb(255, 102, 102)}
      p {text-indent: 15Px;text-align: justify; font-size:15px;}
      img {max-width: 500px;
      	margin: auto;
     	display: block;}
-         a:link{color: blue;}
-    a:visited{color: blue;}
-    a:hover{color: blue}
+         a:link{color: black;}
+    a:visited{color: black;}
+    a:hover{color: black}
     a:active{color: red}
-        	   }
+        	   
+#all {
+   
+    background-color: #e7e7e7;
+    max-width: 100%;
+}
+#text {
+    max-width: 1200px;
+    margin: auto;
+}
+.mainmenu{
+    position: relative;
+    background-color: #ffffff;
+    clear: both;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #dddddd;
+}
+.mainmenu > a:first-child {
+    position: absolute;
+    padding: 4px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: -71px;
+    left: 74px;
+}
+.mainmenu > a:first-child > img{
+    max-width: 160px;
+    border-radius: 50%;
+}
+.mainmenu a {
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}

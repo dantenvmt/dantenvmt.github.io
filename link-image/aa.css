@@ -7,21 +7,24 @@
  h2 {color: rgb(155,176,134);} h3 {color: rgb(115,153,185);} #checkmate {color: rgb(254, 76, 121)} strong {color :rgb(143, 192, 243)} #inshort {color:   rgb(255, 102, 153)} #spoiler {color:   rgb(255, 102, 102)}
      p {text-indent: 15Px;text-align: justify; font-size:15px;}
      img {max-width: 300px}
-    a:link{color: blue;}
-    a:visited{color: blue;}
-    a:hover{color: blue}
+    a:link{color: black;}
+    a:visited{color: black;}
+    a:hover{color: black}
     a:active{color: red}
 
 a {
-	display: block;
 	text-align: center;
+	text-decoration: none;
 }
 .Menu {
-	
+	background-color: #ffffff;
+		text-align: center;
+		padding: 10px;
 		float: left;
-		width: 33.3333%;
-		border: 2px solid #dddddd;
+		width: 33%;
+		border: 1px solid #dddddd;
 		border-top-width:5px;
+		margin-right: 2px;
 
 }
 .info {
@@ -29,15 +32,34 @@ a {
 }
 .list {
 	border-color: #f9b256;
-	    height: 243px;
+	    height: 261px;
 }
 .genre {
 	border-color: #4dbfd9;
-	    height: 243px;
+	    height: 261px;
 }
 .all {
+	
 	max-width: 1300px;
 	margin: auto;
 }
 .more {max-width:1000px;
-	margin:auto;}
+	margin:auto;
+
+}
+.mainmenu{
+    position: relative;
+    background-color: #ffffff;
+    clear: both;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #dddddd;
+}
+.mainmenu a {
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#all {
+	background-color: #e7e7e7;
+}

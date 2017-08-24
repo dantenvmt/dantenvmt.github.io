@@ -1,5 +1,6 @@
 
 .all {
+	
 	max-width: 1300px;
 	margin: auto;
 }
@@ -27,4 +28,20 @@ img {
 	width: 33%;
 	padding: 10px;
 	clear: both;
+}
+.mainmenu{
+    position: relative;
+    background-color: #ffffff;
+    clear: both;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #dddddd;
+}
+.mainmenu a {
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+#all {
+	background-color: #e7e7e7;
 }
