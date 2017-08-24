@@ -1,3 +1,4 @@
+
 .all {
 	max-width: 1300px;
 	margin: auto;
@@ -10,6 +11,20 @@
 	max-width: 1250px;
 	margin: auto;
 }
-img {margin-right: 10px;]
+img {
+	margin-right: 10px;]
 	margin-top: 20px;
+	padding: auto;
+	width: 100%
+}
+.a {float:left;
+	width: 33%;
+	padding: 10px;
+}
+
+.b {
+	float:left;
+	width: 33%;
+	padding: 10px;
+	clear: both;
 }
