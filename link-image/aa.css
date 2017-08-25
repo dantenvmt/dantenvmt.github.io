@@ -67,3 +67,21 @@ a {
 #all {
 	background-color: #e7e7e7;
 }
+.home {background-color: #4CAF50;} /* Green */
+.home:hover {background-color: #46a049;}
+
+.Gallery {background-color: #2196F3;} /* Blue */
+.Gallery:hover {background: #0b7dda;}
+
+.Genre {background-color: #ff9800;} /* Orange */
+.Genre:hover {background: #e68a00;}
+
+.hmm {background-color: #f44336;} /* Red */ 
+.hmm:hover {background: #da190b;}
+    .btn {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
