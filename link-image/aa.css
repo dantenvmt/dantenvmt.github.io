@@ -85,3 +85,20 @@ a {
     font-size: 16px;
     cursor: pointer;
 }
+@keyframes mymove {
+
+	0% {opacity: 0;
+	transition: opacity 1s linear;}
+	20% {opacity: 1}
+	80% {opacity: 1}
+	100% {opacity: 0;
+	transition: opacity 1s linear;}
+    from {right: 0px;}
+    to {right: 200px;}
+}
+
+h4 {color: rgb(128,128,128);
+	opacity: 1;
+	position: relative;
+	animation: mymove 5s cubic-bezier(0.4, 0, 1, 1) infinite;
+}
