@@ -48,17 +48,15 @@ a {
 
 }
 .mainmenu{
-   	position: absolute;
+    position: relative;
     background-color: #ffffff;
     clear: both;
     text-align: center;
     padding: 15px 0;
     border-bottom: 1px solid #dddddd;
-      top: 400px;
 
  }
 .mainmenu a {
-		display: block;
     padding: 15px;
     font-size: 20px;
     text-decoration: none;
@@ -101,4 +99,11 @@ h4 {color: rgb(128,128,128);
 	opacity: 1;
 	position: relative;
 	animation: mymove 5s cubic-bezier(0.4, 0, 1, 1) infinite;
+}
+.menu > ul {
+    list-style-type: none;
+    display: none;
+}
+.menu:hover ul {
+    display: block;
 }
