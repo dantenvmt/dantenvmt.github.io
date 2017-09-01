@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script>
+	var teacher = {
+		  firstName: "Tiểu",
+		  lastName: "Long Nữ",
+		  age: 18,
+		  phephai: 'Cổ Mộ',
+		  title: ", sư phụ của Quá Nhi",
+		  say: function(){}
+
+		}
+	var parent = {
+			firstName:"Quách",
+			lastName:"Tĩnh",
+			age: 30,
+			phephai: "Toàn Chân",
+			title: " và cũng là đệ tử của Giang Nam Thất Quái",
+		say: function(){}
+	}	
+	var parent_mom = {
+			firstName:"Hoàng",
+			lastName:"Dung",
+			age: 29,
+			phephai:"Đảo Đào Hoa, Bang chủ Cái Bang",
+			title: ", hiền thê của Quách Tĩnh đại ca, con gái của Hoàng Dược Sư",
+		say: function(){}
+	}	
+	var aboutMe = function(){
+		document.write("Tại hạ đi không đổi tên, ngồi không đổi họ, tại hạ là " + this.firstName +" " + this.lastName + " tuổi " + this.age + " đệ tử của phái " + this.phephai +" "+ this.title + ". Xin mời vị đại hiệp một chén ")
+  // Code logic here
+}
+
+teacher.say = aboutMe;
+teacher.say();
+parent.say = aboutMe;
+parent.say();
+parent_mom.say = aboutMe;
+parent_mom.say()
+</script>
+</body>
+</html>
+
+
