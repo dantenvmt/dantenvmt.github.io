@@ -1,16 +1,10 @@
 <script>
-var numbers = [2,23,45];
-var doubledNumbers = [];
 
-
-function doubled(arr){
- for (var i = 0; i < arr.length; i ++){
-  var dub = arr[i];
-   var dubb = dub*2;
-   doubledNumbers.push(dubb);
- }
- return doubledNumbers;
+function myFunction(arr) {
+var numbers = arr;
+var doubledNumbers = numbers.map(function(n) {return n*2;});
+document.write(doubledNumbers)
 }
 
-var doubledNumbers = numbers.map(function(n) {return n*2;});
+
 </script>
