@@ -1,0 +1,26 @@
+<script>
+ function test(x,y){
+ 	var x = x
+ 	var y = y
+ 		if (typeof x == 'number'){
+ 			document.write('The first one is a number' + '<br>')
+ 			if (typeof y == 'number') {
+ 				document.write('This one is also a number' + '<br>')
+ 				document.write('The biggest number is' + ' ' + Math.max(x,y))
+ 			}
+ 			else {
+ 				document.write('This second one isnt')
+ 			}
+
+		}
+ 		
+ 		else {
+ 				document.write('The first one is not a number' + '<br>')
+ 				if (typeof y == 'number') {
+ 					document.write('The second one is a number' + '<br>')
+ 				}
+ 		}
+ 	}
+ 			
+
+</script>
