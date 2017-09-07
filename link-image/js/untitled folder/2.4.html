@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Validate form</title>
+        <meta charset="UTF-8">
+        <script language="javascript" src="script.js">
+            function validateForm()
+            {
+                return false;
+            }
+
+        </script>
+    </head>
+    <body>
+        <form method="post" action="" onsubmit="return validateForm()">
+            Username: <input type="text" name="username" id="username" value=""/> <br/><br/>
+            Password: <input type="password" name="password" id="password" value=""/> <br/><br/>
+            Verified Password: <input type="password" name="verifiedpassword" id="verifiedpassword" value=""/> <br/><br/>
+
+            <input type="submit" name="login" value="Login"/>
+        </form>
+    </body>
+</html>

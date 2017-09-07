@@ -1,6 +1,6 @@
 <script>
 	function factorial (n){
-	if (n =='interger') {
+	if (Number.isInteger(n)) {
   j = 1;
   for(i=1;i<=n;i++){
     j = j*i;
@@ -8,7 +8,7 @@
   return j;
 }
 	else{
-		document.write('this is not an interger')
+		document.write('this is not an integer')
 	}
 }
 </script>
