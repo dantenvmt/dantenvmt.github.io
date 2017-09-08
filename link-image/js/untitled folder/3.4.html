@@ -1,0 +1,34 @@
+<script>
+document.write('If you wanna traslate to Japanese, type Hello-001'+'<br>')
+document.write('If you wanna traslate to Japanese-morning, type Hello-001-morning'+'<br>')
+document.write('If you wanna traslate to Vietnamese, type Hello-002'+'<br>')
+document.write('If you wanna traslate to Spanish, type Hello-003'+'<br>')
+document.write('If you wanna traslate to Korean, type Hello-004'+'<br>')
+document.write('If you wanna traslate to Chinese, type Hello-005'+'<br>')
+
+	function language(arr){
+		var x = arr
+		switch (x) {
+			case "Hello-001":
+				document.write('こんにちは');
+				break;
+			case "Hello-001-morning":
+				document.write('おはようございます');
+				break;
+			case "Hello-002":
+				document.write('Xin Chào');
+				break;
+			case "Hello-003":
+				document.write('Hola');
+				break;
+			case 'Hello-004':
+				document.write('안녕하세요');
+				break;
+			case 'Hello-005':
+				document.write('你好');
+				break;
+
+		}
+	}
+
+</script>
