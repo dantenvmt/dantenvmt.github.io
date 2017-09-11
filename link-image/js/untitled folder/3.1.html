@@ -1,0 +1,20 @@
+<script>
+function date(arr) {
+	var now = new Date();   // Lấy thời gian hiện tại
+	var date = now.getDate();   // Lấy ngày từ thời gian hiện tại
+	var month = now.getMonth() + 1;   // Lấy tháng từ thời gian hiện tại. Do tháng trong javascript tính từ 0 - 11 nên phải +1
+	var year = now.getFullYear();   // Lấy năm (đầy đủ 4 số) từ thời gian hiện tại
+	if (month >= 1 && month <= 3) {
+		document.write('This is '+ now + '. And this is Spring');
+	}
+	if (month >= 4 && month <= 6) {
+		document.write('This is '+ now + '. And this is Summer');
+		}
+	if (month >= 7 && month <= 9) {
+		document.write('This is '+ now + '. And this is Autumn');
+	}
+	if (month >= 10 && month <= 12) {
+		document.write('This is '+ now + '. And this is Winter');
+	}	
+ }
+</script>
