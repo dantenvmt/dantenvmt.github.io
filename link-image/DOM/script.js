@@ -50,3 +50,10 @@ function changeColor(){
 		}
 
 }
+function changeBgColor(color){
+	document.getElementById("all").style.backgroundColor = color
+}
+function copyContent(paragraph1, paragraph2){
+	var y = document.getElementById(paragraph2)
+	document.getElementById(paragraph1).innerHTML = y.innerHTML;
+}
