@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box;
+padding: 0;
+margin: 0}
+body {font-family: Verdana,sans-serif;background-color: black; }
+.mySlides {display:none}
+
+.slideshow-container {
+  max-width: 1500px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.answer{
+  text-align: center;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 700px) {
+  .text {font-size: 12px}
+}
+.btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    width: 500px;
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+#abcd{
+    position: absolute;
+    top: 45px;
+    max-width: 100%;
+    width: 1500px
+}
+</style>
+  <title>Hãy Chọn Giá Đúng</title>
+</head>
+
+<body>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="pexels-photo-279315.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="sl2.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="vadi1.jpg" style="width:100%">
+</div>
+  <div id="abcd">
+      <h1 style='text-align: center; color: black; margin: 50px'>V2hhdCBpcyB0aGUgc3F1YXJlIHJvb3Qgb2YgNjQ/</h1>
+      <div class="answer"><button class="btn success" onclick="acc()">A. OA==</button></div>
+      <div class="answer"><button class="btn danger" onclick="myFunction()">B. NjQ=</button></div>
+      <div class="answer"><button class="btn warning" onclick="myFunction()">C. Thứ duy nhất bạn có thể đọc</button></div>
+      <div class="answer"><button class="btn info" onclick="myFunction()">D. SSBkb24ndCBrbm93</button></div>
+  </div>
+</div>
+<br>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 2000);
+}
+function acc()
+  {
+    alert('Đúng cmnr bạn, mời bạn tiếp tục câu 4')
+    location.replace('cau 4.html')
+  }
+  function myFunction() {
+   alert('QuG6oW4gQ2jGsGEgxJDhu6cgVHXhu5VpIMSQ4buDIEzDqm4gQ8OidSAz')
+   alert('Điểm số của bạn là 2 (lvl: có tiến triển, nhưng vẫn ăn hại)')
+   location.replace('untitled.html')
+}
+</script>
+
+
+</div>
+</body>
+</html>
