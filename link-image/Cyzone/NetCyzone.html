@@ -6,6 +6,8 @@
     <link rel="icon" type="image/png" href="32177.png"> 
     <link rel="stylesheet" type="text/css" href="cc.css">
     <link rel="stylesheet" type="text/css" href="aa.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
     <style>
     p {
     	margin: 15px;
@@ -15,6 +17,21 @@
     	list-style-position: inside;margin: 15px;
     	list-style-image: 
     }
+    @font-face{
+    	font-family: Fighting;
+    	src: url('Fighting Spirit 2 bold.ttf');
+    	font-size: 20px;
+    }
+    @font-face{
+    	font-family: Manga;
+    	src: url('mangat.ttf');
+    }
+    h2{
+    	font-family: Manga
+    }
+    button {
+    	font-family: Fighting
+    }
     </style>
   <body>
 	  <div id="all">
@@ -22,13 +39,13 @@
 	    	<img src="suke-322.jpg" style="max-width: 100%" alt="banner" title="banner">
 	            <div class="mainmenu">
 	            	<a href="NetCyzone.html" class="active"><img src="12795297_1077771072303017_8227474202703061228_n.jpg" title="Cyzone" alt="Cyzone"></a>
-	                <a href="NetCyzone.html"><button class="btn home">Trang Chủ</button></a>
-	                <a href="doan.html"><button class="btn Gallery">Gọi Đồ</button></a>
-	                <a href="Napthe.html"><button class="btn Genre">Nạp Thẻ</button></a>
-	                <a href="Naptien.html"><button class="btn hmm">Nạp Tiền</button></a>
+	                <a href="NetCyzone.html"><button class="btn home">Main Page</button></a>
+	                <a href="doan.html"><button class="btn Gallery">Order</button></a>
+	                <a href="Napthe.html"><button class="btn Genre">Buying Cards</button></a>
+	                <a href="Naptien.html"><button class="btn hmm">Top Up</button></a>
 	            </div> 
 	    <div class="Menu info" style="margin-top: 30px; margin-bottom: 30px">
-	       <h2 style="font-size: 20px">Giới Thiệu</h2>
+	       <h2 style="font-size: 20px">About</h2>
         <ul style="position: absolute;
 				    background: white;
 				    width: 433px;
@@ -36,18 +53,18 @@
 					;
 				    left: -1px;
 				    border-top: 0px;">
-            <li><a href="#gt" style="text-align: left;"><div>Giới Thiệu Về Cyzone</div></a></li>
+            <li><a href="#gt" style="text-align: left;"><div>About Cyzone</div></a></li>
 
             
-            <li><a href="#cauhinh" style="text-align: left;"><div>Cấu hình Máy Tính</div></a></li>
+            <li><a href="#cauhinh" style="text-align: left;"><div>Pc Configuration</div></a></li>
         
-            <li><a href="#giaca" style="text-align: left;"><div>Giá Cả</div></a></li>
-            <li><a href="#taisao" style="text-align: left;"><div>Tại Sao Lại Là Cyzone?</div></a></li>
+            <li><a href="#giaca" style="text-align: left;"><div>Pricing</div></a></li>
+            <li><a href="#taisao" style="text-align: left;"><div>Why Choosing Cyzone</div></a></li>
             
         </ul>
       </div>
 	      <div class="Menu list" style="margin-top: 30px; margin-bottom: 30px">
-	        <h2 style="font-size: 20px">Mua Sắm</h2>
+	        <h2 style="font-size: 20px">Buying Stuff</h2>
 	        <ul style="position: absolute;
 				    background: white;
 				    width: 433px;
@@ -80,7 +97,7 @@
 	            <li><a href="Gallery.html" style="text-align: left;"><div>Dota 2</div></a></li>
 	        </ul>
 		</div>        
-			<div><h2 style="font-size: 30px; clear: both;" id="gt">Giới thiệu về Cyzone</h2>
+			<div><h2 style="font-size: 30px; clear: both;" id="gt">About Cyzone</h2>
 				<p>Cyzone là một Cyber net có trụ sở chính tại 79 Đặng Văn Ngừ. Hiện nay, Chúng tớ mới mở một trụ sớ mới tại Số 1 Võ Thị Sáu, Hai Bà Trưng.</p>
 				<p>Cyzone Stadium - 79 Đặng Văn Ngữ (Hồ Đắc Di - Đống Đa - Hà Nội)!!! Không gian chơi game chuyên nghiệp, giá cả bình dân 😘</p>
 				<p>Với đội ngũ nhân viên chuyên nghiệp, cộng thêm những dàn máy cấu hình khủng lên tới hàng trăm triệu đồng, Cyzone Stadium xin có thể đảm bảo cảm giác chơi game của các bạn được đạt tới mức đỉnh điểm</p>
@@ -88,7 +105,7 @@
 				<p>Liệu Cyzone chỉ có thế? Không, Chúng mình còn có nhiều hơn thế nữa. Tất cả đang chờ bạn đến khám phá!!!!</p>
 				<p style="text-align: right;">p/s: Tất nhiên, tụi mình có điều hòa, và có phòng dảnh riêng cho hút thuốc</p>
 			</div>
-			<h2 style="font-size: 30px; clear: both; margin-top: 30px;" id="cauhinh">Cấu Hình Máy Tính</h2>
+			<h2 style="font-size: 30px; clear: both; margin-top: 30px;" id="cauhinh">Pc Configuration</h2>
 				<p> Chỗ chúng mình có sử dụng 2 loại pc đó là Asus G20CB-DH73-GTX1080 Gaming Desktop và MSI Desktop Computer Trident 3 VR7RC-020US</p>
 				<p> Với 2 sự lựa chọn đó là phòng vip và phòng thường, tụi mình có thể đảm bảo có thể đáp ứng được với mọi yêu cầu thị yếu của các gamer, từ mức giá bình dân, đến mức giá chát hơn chút xíu</p>
 				<p> Vậy, 2 bộ pc khác nhau ở chỗ nào?</p>
@@ -102,16 +119,17 @@
 					<li>Bộ xử lý không gây tiếng ồn và rất mát. Được tản nhiệt bởi convection airflow system, hỗ trợ bởi 2 quạt bên trong và các ống đồng</li>
 					<li>Có những cổng 1x Headphone/Mic Jack, 1x LAN port, 1x HDMI Out, 2x USB 3.1, 2x USB 3.0, 2x USB 2.0</li>
 				</ul>
-				<p>Được nối với màn hình: Samsung C24FG70: Curved gaming</p>
+				<p>Được nối với <i class="fa fa-television" aria-hidden="true"></i>: Samsung C24FG70: Curved gaming</p>
 				<img src="http://cdn2.expertreviews.co.uk/sites/expertreviews/files/styles/large/public/2017/01/best_gaming_monitor_-_samsung_c24fg70fqu.png?itok=o0LRVEcC" alt="Samsung" title="Samsung">
 				<p>Không chỉ thế, tụi mình còn sử dụng</p>
 				<img src="https://assets.razerzone.com/eeimages/products/27310/lanceheadte-og-1200x630-v1.png"><p style="text-align: center;font-size: 10px;">Razer Lancehead</p>
 				<p>Và
 				<img src="https://www.custompcreview.com/wp-content/uploads/2017/01/razer-blackwidow-chroma-v2-mechanical-gaming-keyboard-custom-pc-review-17.jpg">
-				<p style="text-align: center;font-size: 10px;">Razer Blackwidow Chroma v2</p>
+				<p style="text-align: center;font-size: 10px;"><i class="fa fa-keyboard-o" aria-hidden="true"></i>
+ Razer Blackwidow Chroma v2</p>
 				<p>với</p>
 				<img src="https://assets.razerzone.com/eeimages/products/24708/razer-manowar-tech.png">
-				<p style="text-align: center;font-size: 10px;">Tai Nghe Man O War</p>
+				<p style="text-align: center;font-size: 10px;">Tai Nghe Man O War<i class="fa fa-headphones" aria-hidden="true"></i></p>
 				<ul><p style="text-align: center;">Bộ PC thứ 2 (dành cho phòng bình dân)</p>
 				<img src="83-152-222-V21.jpg">
 					<li>Intel Core i5 7th Gen 7400 (3.00 GHz)</li>
@@ -121,16 +139,16 @@
 					<li>NVIDIA GeForce GTX 1060 3 GB GDDR5</li>					
 				</ul>
 				<p>Tuy Không mạnh như pc đầu nhưng đủ để chơi The Witcher 3 với medium-setting mà vẫn vượt qua 60 FPS rồi chứ</p>
-				<p>Được nối với màn hình: AOC AG322QCX </p>
+				<p><i class="fa fa-television" aria-hidden="true"></i>: AOC AG322QCX </p>
 				<img src="http://cdn1.expertreviews.co.uk/sites/expertreviews/files/styles/large/public/2017/07/best_gaming_monitor_-_aoc_ag322qcx.jpg?itok=ULJHAyIl" alt="AOC" title="AOC">
 				<p>Bộ gear được sử dụng là như nhau ở 2 máy</p>
-			<h2 style="font-size: 30px; clear: both; margin-top: 30px;" id="giaca">Giá Cả</h2>
+			<h2 style="font-size: 30px; clear: both; margin-top: 30px;" id="giaca">Pricing <i class="fa fa-money" aria-hidden="true"></i></h2>
 				<p>Luyên thuyên thế là đủ, vậy giá cả của 2 phòng như nào?</p>
 				<OL>
 				<li>Phòng Vip: 10000 VND/h </li>
 				<li>Phong Thường: 5000 VND/h</li>
 				</OL>
-			<h2 style="font-size: 30px; clear: both; margin-top: 30px;" id="taisao">Tại sao lại là tụi mình?</h2>
+			<h2 style="font-size: 30px; clear: both; margin-top: 30px;" id="taisao">Why Choosing Us?</h2>
 			<p>Một số lí do sau:</p>
 				<ol>
 					<li style="list-style-image: url(https://files-cloud.enjin.com/smiley/57970_Rainbow.png?0);">Số lượng máy lớn, gần 300 máy với cấu hình khủng, gear chuẩn👌</li>
