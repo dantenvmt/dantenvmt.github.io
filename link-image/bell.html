@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bell</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="cc.css">
+    <link rel="stylesheet" type="text/css" href="aa.css">
+    <style>
+    p {
+    	margin: 15px;
+    	display: block;
+    }
+    </style>
+  <body>
+    <div id="all">
+  	<form action="/action_page.php">
+     <div> <p>1.What is your age<br></p>
+      <input type="text" name="age" >
+      <br> </div>
+      <div><p>2.What's your gender<br></p>
+      <input type="radio" name="gender"> Male<br>
+      <input type="radio" name="gender"> Female<br>
+      <input type="radio" name="gender"> Prefer to self respond
+      <input type="text" name="gender">
+      <br>
+      <input type="radio" name="gender" value="not"> Prefer to not respond
+      <br> </div>
+      <div> <p>3.  Please specify your ethnicity (or race)</p> <br>
+       <input type="radio" name="race" >Hispanic or Latino <br>
+       <input type="radio" name="race" > Black or African-American<br>
+       <input type="radio" name="race" > Native American or American Indian <br>
+       <input type="radio" name="race">   Asian / Pacific Islander <br>
+       <input type="radio" name="race" >   White or European <br>
+       <input type="radio" name="race" >  Multi-Racial <br>
+       <input type="radio" name="race" > Prefer to self respond <input type="text" name="race"> <br>
+       <input type="radio" name="race">   Prefer to not respond <br> </div>
+      <div> <p>4.  What is the highest degree or level of school you have completed?</p>
+       <input type="radio" name="degree" >  No schooling completed <br>
+       <input type="radio" name="degree" >  8th grade <br>
+       <input type="radio" name="degree" >  Some High School, no diploma <br>
+       <input type="radio" name="degree" >  High school graduate or GED <br>
+       <input type="radio" name="degree" >  Some College/University, no degree <br>
+       <input type="radio" name="degree" >  Trade/Technical/Vocational training <br>
+       <input type="radio" name="degree" >  Associate degree (e.g. AA, AS) <br>
+       <input type="radio" name="degree" >  Bachelor’s degree (e.g. BA, BS) <br>
+       <input type="radio" name="degree" >  Master’s degree (e.g. MA, MS, Med) <br>
+       <input type="radio" name="degree" >  Professional terminal degree (e.g. MD, DDS, DVM, JD) <br>
+       <input type="radio" name="degree" >  Doctorate degree (e.g. PhD, EdD) <br> </div>
+       <div> <p>5.   What is your marital status? </p> 
+        <input type="radio" name="status" > Single, never married <br>
+        <input type="radio" name="status" > Married or domestic partnership <br>
+        <input type="radio" name="status" > Widowed <br>
+        <input type="radio" name="status" > Separated <br>
+        <input type="radio" name="status" > Divorced <br>
+        <input type="radio" name="status" > Prefer not to respond <br> </div>
+       <div><p>6.    What is your annual income? </p>
+        <input type="radio" name="income" > Less than $20,000<br>
+        <input type="radio" name="income" > $20,000 to $34,999<br>
+        <input type="radio" name="income" > $35,000 to $49,999<br>
+        <input type="radio" name="income" > $50,000 to $74,999<br>
+        <input type="radio" name="income" > $75,000 to $99,999<br>
+        <input type="radio" name="income" > $100,000 to $149,999<br>
+        <input type="radio" name="income" > $150,000 to $249,999<br>
+        <input type="radio" name="income" > Over $250,000<br>
+        <input type="radio" name="income" > Prefer not to respond <br> </div>
+      <div> <p>7. In what zip code do you live? </p>
+        <input type="text" name="zip_code"> <br> </div>
+
+     <div> <p>8.  Do you speak a language other than English?</p>
+        <input type="radio" name="language"> Conversationally <br>
+        <input type="radio" name="language"> Fluently <br>
+        <input type="radio" name="language"> No <br> </div>
+
+      <div> <p>9.  What is your occupational field? </p>
+        <input type="radio" name="occupation"> Management (e.g. business, finance, management) <br>
+        <input type="radio" name="occupation"> Professional (e.g. computer, engineering, legal, healthcare practioners, education) <br>
+        <input type="radio" name="occupation"> Service (e.g. healthcare support, protective services, food preparation, personal care, building/grounds) <br>
+        <input type="radio" name="occupation"> Sales (e.g. sales, customer service, office administration) <br>
+        <input type="radio" name="occupation"> Natural resources and construction (e.g. agriculture, construction, installation, repair) <br>
+        <input type="radio" name="occupation"> Production and transportation (e.g. factory, commercial transportation, material moving) <br>
+        <input type="radio" name="occupation"> Not working but want to work <br>
+        <input type="radio" name="occupation"> Not working and do not want to work <br>
+        <input type="radio" name="occupation"> Retired<br> </div>
+
+      <div>  <p>10. What is your employment status? </p>
+        <input type="radio" name="employment">Unemployed <br>
+        <input type="radio" name="employment">Not in labor force (e.g. retired, homemaker, etc) <br>
+        <input type="radio" name="employment">Employed part-time (less than 30 hrs/wk) <br>
+        <input type="radio" name="employment">Employed full-time (30 hrs or more/wk) <br> </div>
+
+       <div>  <p>11. What driving certifications / license have you completed? </p>
+        <input type="radio" name="certifications">  I do not have a license <br>
+        <input type="radio" name="certifications">  Drivers license <br>
+        <input type="radio" name="certifications">  Commercial driver’s license <br> </div>
+
+ <div> <p>12. Do you or have you ever operated a motor vehicle for the following (select all that apply): </p>
+        <input type="radio" name="motor"> No experience <br>
+        <input type="radio" name="motor"> A taxicab company <br>
+        <input type="radio" name="motor"> Delivery driver <br>
+        <input type="radio" name="motor"> Peer-to-peer ridesharing (e.g. Uber, Lyft, Sidecar, etc) <br>
+        <input type="radio" name="motor"> Package delivery (e.g. FedEx, UPS, USPS, etc) <br>
+        <input type="radio" name="motor"> Over-the-road (OTR) (i.e. long haul trucking) <br>
+     </div>
+
+<div> <p>12a. How long did you operate a motor vehicle for hire? </p>
+         <input type="radio" name="motor_vehicle"> Less than 1-year <br>
+        <input type="radio" name="motor_vehicle"> Between 2 and 5 years <br>
+        <input type="radio" name="motor_vehicle"> Greater than 5 years <br>
+</div>
+
+<div> <p>13. I participate in the following leisure activities (select all that apply): </p>
+        <input type="radio" name="activities">  Sports (e.g. working out, running, biking, basketball, etc) <br>
+        <input type="radio" name="activities">Outdoor activities (e.g. hiking, hunting, boating, etc) <br>
+        <input type="radio" name="activities"> Arts & crafts (e.g. painting, woodworking, DIY, etc) <br>
+        <input type="radio" name="activities">  Working on motor vehicles (e.g. motorcycle, car, etc) <br>
+        <input type="radio" name="activities"> Technical (e.g. computer programming, HAM radio, electronics, etc) <br>
+        <input type="radio" name="activities">  Remote control aircraft / drones <br>
+        <input type="radio" name="activities">  Video games </div>
+
+<div><p>13a. What technical hobbies do you enjoy (please specify)? <input type="text" name="hobbies"> </p> </div>
+
+<div><p>13b. How long have you operated remote controlled aircraft (please specify)? <input type="text" name="aircraft"> </p> </div>
+
+<div><P>13c. How many hours per week do you play video games? </P> 
+        <input type="radio" name="hours">  Less than 5 hours per week <br>
+        <input type="radio" name="hours">  Between 6 and 10 hours per week <br>
+        <input type="radio" name="hours">  Greater than 10 hours per week <br>
+        </div>
+
+<div> <p>13d. What type of video games do you play? (select all that apply) </p>
+        <input type="radio" name="games">  Role playing (Call of duty, Assassins creed, etc) <br>
+        <input type="radio" name="games">  Sports (UFC3, MLB 18, NBA 2K18, etc) <br>
+        <input type="radio" name="games">  Simulation (Minecraft, The Sims, etc) <br>
+        <input type="radio" name="games">  Arcade (Candy crush, Tetris, Donkey Kong, etc) <br>
+        <input type="radio" name="games">  Augmented / Virtual reality (Pokemon Go, House of the dying sun, etc) <br>
+        <input type="radio" name="games">  Automobile racing (Mario Kart, Grand theft auto, etc) <br>
+        <input type="radio" name="games">  Flight (X-pane, IL-2 Sturmovik, etc) <br>
+</div>
+
+<div><p>14. What is your aviation experience? </p>
+<input type="radio" name="aviation_experience">  No experience <br>
+<input type="radio" name="aviation_experience">  Some flight training <br>
+<input type="radio" name="aviation_experience">  Private pilot license <br>
+<input type="radio" name="aviation_experience">  Commercial pilot license <br> </div>
+
+<div><p>14a. How many total simulator hours do you have? <input type="text" name="simulator"> </p>
+
+<div><p>14b. How many total flight hours do you have? <input type="text" name="flight"> </p>
+</div>
+     
+</form> 
+
+ </body>
