@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thuan Nguyen — Résumé</title>
+<meta name="description" content="Résumé of Thuan Nguyen — Data Analyst, Dallas TX." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#fff; --ink:#16150f; --ink-soft:#45433a; --ink-faint:#7c7868;
+    --line:#d8d3c6; --accent:#0e7490; --accent-deep:#0b5566;
+    --serif:"Fraunces",Georgia,serif; --sans:"Archivo",system-ui,sans-serif; --mono:"JetBrains Mono",monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{ background:#e8e4da; font-family:var(--sans); color:var(--ink); line-height:1.5; -webkit-font-smoothing:antialiased; padding:34px 16px 70px; }
+
+  /* floating toolbar (screen only) */
+  .toolbar{ max-width:8.5in; margin:0 auto 18px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .toolbar a, .toolbar button{ font-family:var(--mono); font-size:12px; letter-spacing:.04em; border:1px solid var(--ink); background:transparent; color:var(--ink); padding:10px 18px; border-radius:100px; cursor:pointer; display:inline-flex; align-items:center; gap:8px; transition:background .2s,color .2s,transform .2s; text-decoration:none; }
+  .toolbar a:hover,.toolbar button:hover{ background:var(--ink); color:#fff; transform:translateY(-1px); }
+  .toolbar .print{ background:var(--ink); color:#fff; }
+  .toolbar .print:hover{ background:var(--accent); border-color:var(--accent); }
+  .toolbar .hint{ font-family:var(--mono); font-size:11px; color:var(--ink-faint); letter-spacing:.03em; }
+
+  .page{
+    max-width:8.5in; margin:0 auto; background:var(--paper); color:var(--ink);
+    padding:0.62in 0.66in; box-shadow:0 24px 60px -30px rgba(0,0,0,.5);
+  }
+
+  header.r-head{ border-bottom:2px solid var(--ink); padding-bottom:14px; margin-bottom:16px; }
+  .r-name{ font-family:var(--serif); font-weight:500; font-size:33px; letter-spacing:-.02em; line-height:1; }
+  .r-title{ font-family:var(--mono); font-size:11.5px; letter-spacing:.18em; text-transform:uppercase; color:var(--accent-deep); margin-top:8px; }
+  .r-contact{ margin-top:11px; display:flex; flex-wrap:wrap; gap:5px 16px; font-size:12px; color:var(--ink-soft); }
+  .r-contact a{ color:var(--ink-soft); text-decoration:none; }
+  .r-contact a:hover{ color:var(--accent-deep); }
+  .r-contact .sep{ color:var(--line); }
+
+  section.r-sec{ margin-top:16px; }
+  .r-sec h2{
+    font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:.2em; text-transform:uppercase;
+    color:var(--accent-deep); padding-bottom:5px; margin-bottom:10px; border-bottom:1px solid var(--line);
+  }
+  .r-summary{ font-size:12.6px; color:var(--ink-soft); line-height:1.55; }
+  .r-summary b{ color:var(--ink); font-weight:600; }
+
+  .r-job{ margin-bottom:13px; }
+  .r-job:last-child{ margin-bottom:0; }
+  .r-job-head{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; }
+  .r-job-head .org{ font-weight:700; font-size:13.5px; }
+  .r-job-head .when{ font-family:var(--mono); font-size:10.5px; letter-spacing:.04em; color:var(--ink-faint); white-space:nowrap; }
+  .r-job-sub{ display:flex; justify-content:space-between; align-items:baseline; gap:14px; margin:1px 0 6px; }
+  .r-job-sub .role{ font-family:var(--serif); font-style:italic; font-size:13px; color:var(--accent-deep); }
+  .r-job-sub .where{ font-family:var(--mono); font-size:10.5px; color:var(--ink-faint); }
+  ul.r-points{ list-style:none; }
+  ul.r-points li{ position:relative; padding-left:14px; font-size:12.1px; color:var(--ink-soft); line-height:1.5; margin-bottom:3.5px; }
+  ul.r-points li::before{ content:""; position:absolute; left:1px; top:7px; width:4px; height:4px; background:var(--accent); border-radius:50%; }
+  ul.r-points li b{ color:var(--ink); font-weight:600; }
+
+  .r-two{ display:grid; grid-template-columns:1fr 1fr; gap:6px 28px; }
+  .edu-row{ display:flex; justify-content:space-between; align-items:baseline; gap:10px; }
+  .edu-row .deg{ font-size:12.2px; }
+  .edu-row .deg b{ font-weight:700; }
+  .edu-row .when{ font-family:var(--mono); font-size:10px; color:var(--ink-faint); white-space:nowrap; }
+
+  .skills-table{ display:grid; grid-template-columns:max-content 1fr; gap:6px 14px; }
+  .skills-table .k{ font-family:var(--mono); font-size:10.5px; letter-spacing:.04em; text-transform:uppercase; color:var(--accent-deep); padding-top:1px; }
+  .skills-table .v{ font-size:12px; color:var(--ink-soft); }
+
+  .r-awards li{ list-style:none; font-size:11.9px; color:var(--ink-soft); position:relative; padding-left:14px; margin-bottom:2px; }
+  .r-awards li::before{ content:"▸"; position:absolute; left:0; color:var(--accent); font-size:9px; top:2px; }
+  .r-awards li b{ color:var(--ink); font-weight:600; }
+
+  @media print{
+    @page{ size:Letter; margin:0; }
+    body{ background:#fff; padding:0; }
+    .toolbar{ display:none; }
+    .page{ box-shadow:none; max-width:none; width:100%; padding:0.5in 0.55in; }
+    a{ color:inherit !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a href="index.html">← Back to portfolio</a>
+  <span class="hint">Tip: Print → “Save as PDF” for a clean one-page résumé</span>
+  <button class="print" onclick="window.print()">⤓ Download PDF</button>
+</div>
+
+<div class="page">
+  <header class="r-head">
+    <div class="r-name">Thuan Nguyen</div>
+    <div class="r-title">Data Analyst</div>
+    <div class="r-contact">
+      <a href="tel:+19032599470">(903) 259-9470</a><span class="sep">/</span>
+      <a href="mailto:thuannguyen.vm@gmail.com">thuannguyen.vm@gmail.com</a><span class="sep">/</span>
+      <span>Dallas, TX</span><span class="sep">/</span>
+      <a href="https://www.linkedin.com/in/thuan-nguyen-vm1102" target="_blank" rel="noopener">linkedin.com/in/thuan-nguyen-vm1102</a><span class="sep">/</span>
+      <a href="https://github.com/dantenvmt" target="_blank" rel="noopener">github.com/dantenvmt</a>
+    </div>
+  </header>
+
+  <section class="r-sec">
+    <h2>Summary</h2>
+    <p class="r-summary">
+      Data analyst focused on <b>accuracy, validation, and operational reliability</b> across multi-source environments. Experience cleansing and standardizing data from <b>10+ disparate sources</b>, maintaining schema integrity through zero-downtime migrations, investigating discrepancies, and building automation that reduces manual rework. Strong <b>SQL and Python</b>; comfortable supporting production data processes alongside business and technical teams.
+    </p>
+  </section>
+
+  <section class="r-sec">
+    <h2>Education</h2>
+    <div class="edu-row"><span class="deg"><b>East Texas A&amp;M University</b> — M.S. Business Analytics and Marketing, GPA 3.8</span><span class="when">June 2025</span></div>
+    <div class="edu-row"><span class="deg"><b>East Texas A&amp;M University</b> — B.S. Business Analytics and Marketing, GPA 3.6</span><span class="when">April 2023</span></div>
+  </section>
+
+  <section class="r-sec">
+    <h2>Experience</h2>
+
+    <div class="r-job">
+      <div class="r-job-head"><span class="org">Renaisons LLC</span><span class="when">June 2024 – Present</span></div>
+      <div class="r-job-sub"><span class="role">Data Analyst</span><span class="where">Dallas, TX</span></div>
+      <ul class="r-points">
+        <li>Collected, cleansed, and standardized <b>1.5M+ records</b> from <b>10+ disparate</b> internal and external sources into a normalized PostgreSQL warehouse with full-text indices, establishing a trusted single source for downstream reporting and analytics.</li>
+        <li>Maintained schema integrity and data rules through <b>15 zero-downtime Alembic migrations</b>, applying consistent mappings and transformations while preventing disruption to production data processes.</li>
+        <li>Built an <b>LLM extraction pipeline</b> with anti-fabrication constraints to replace brittle regex parsers, automating validation and cutting manual rework on records that previously required hand correction.</li>
+        <li>Investigated data discrepancies across ingestion and matching steps, tracing root causes and applying corrective fixes to improve accuracy and consistency for <b>200+ paying customers</b>.</li>
+      </ul>
+    </div>
+
+    <div class="r-job">
+      <div class="r-job-head"><span class="org">East Texas A&amp;M University</span><span class="when">Sep. 2023 – Sep. 2024</span></div>
+      <div class="r-job-sub"><span class="role">Graduate Research Assistant</span><span class="where">Commerce, TX</span></div>
+      <ul class="r-points">
+        <li>Co-authored <b>2 research papers</b> presented at the 25th Annual Security Conference (2026), standardizing and validating a 50,472-record imbalanced dataset drawn from public financial filings.</li>
+        <li>Built a two-stage analytical pipeline reaching <b>82% classification accuracy, 11 percentage points</b> above traditional baselines, with systematic checks to validate outputs and assess error patterns.</li>
+      </ul>
+    </div>
+
+    <div class="r-job">
+      <div class="r-job-head"><span class="org">Morgan Stanley</span><span class="when">June 2022 – Sep. 2022</span></div>
+      <div class="r-job-sub"><span class="role">Wealth Management Technology Intern</span><span class="where">Alpharetta, GA</span></div>
+      <ul class="r-points">
+        <li>Built an Excel-based portfolio tracker reconciling client holdings, performance attribution, and rebalancing across consolidated books, catching discrepancies that manual tracking had missed.</li>
+        <li>Designed and documented an investment committee charter and review process from scratch following an advisor consolidation, standardizing how data and recommendations were validated.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="r-sec">
+    <h2>Technical Skills</h2>
+    <div class="skills-table">
+      <span class="k">Languages &amp; Querying</span><span class="v">SQL, Python (pandas, NumPy), R, SAS</span>
+      <span class="k">Data &amp; Pipelines</span><span class="v">PostgreSQL, Oracle SQL, Apache Spark, Alembic (migrations), data cleansing, validation, ETL</span>
+      <span class="k">Data Quality</span><span class="v">Multi-source standardization, schema integrity, discrepancy investigation, automation of manual rework</span>
+      <span class="k">AI / ML</span><span class="v">LLM extraction pipelines, prompt engineering, RAG, scikit-learn, PyTorch, TensorFlow</span>
+      <span class="k">BI &amp; Tools</span><span class="v">Excel (advanced), Tableau, Power BI, Azure VMs, Git/GitHub, Linux</span>
+    </div>
+  </section>
+
+  <section class="r-sec">
+    <h2>Honors &amp; Awards</h2>
+    <ul class="r-awards">
+      <li><b>1st Place</b>, TAMUC AI Hackathon (April 2023)</li>
+      <li><b>1st Place</b>, 6th Annual ISACA North Texas IT Security National Competition (April 2023)</li>
+      <li><b>Certifications:</b> Oracle Database SQL Certified Associate; Tableau Desktop Specialist</li>
+    </ul>
+  </section>
+</div>
+
+</body>
+</html>
