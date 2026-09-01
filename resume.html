@@ -11,7 +11,7 @@
 <style>
   :root{
     --paper:#fff; --ink:#16150f; --ink-soft:#45433a; --ink-faint:#7c7868;
-    --line:#d8d3c6; --accent:#0e7490; --accent-deep:#0b5566;
+    --line:#d8d3c6; --accent:#1b3f73; --accent-deep:#12294d;
     --serif:"Fraunces",Georgia,serif; --sans:"Archivo",system-ui,sans-serif; --mono:"JetBrains Mono",monospace;
   }
   *{box-sizing:border-box;margin:0;padding:0;}
@@ -86,8 +86,9 @@
 
 <div class="toolbar">
   <a href="index.html">← Back to portfolio</a>
-  <span class="hint">Tip: Print → “Save as PDF” for a clean one-page résumé</span>
-  <button class="print" onclick="window.print()">⤓ Download PDF</button>
+  <span class="hint">Or print this page → “Save as PDF”</span>
+  <button onclick="window.print()">⎙ Print</button>
+  <a class="print" href="Thuan_Nguyen_Resume.pdf" download>⤓ Download PDF</a>
 </div>
 
 <div class="page">
@@ -99,14 +100,15 @@
       <a href="mailto:thuannguyen.vm@gmail.com">thuannguyen.vm@gmail.com</a><span class="sep">/</span>
       <span>Dallas, TX</span><span class="sep">/</span>
       <a href="https://www.linkedin.com/in/thuan-nguyen-vm1102" target="_blank" rel="noopener">linkedin.com/in/thuan-nguyen-vm1102</a><span class="sep">/</span>
-      <a href="https://github.com/dantenvmt" target="_blank" rel="noopener">github.com/dantenvmt</a>
+      <a href="https://github.com/dantenvmt" target="_blank" rel="noopener">github.com/dantenvmt</a><span class="sep">/</span>
+      <a href="https://scholar.google.com/citations?user=wvCfGGkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
     </div>
   </header>
 
   <section class="r-sec">
     <h2>Summary</h2>
     <p class="r-summary">
-      Data analyst focused on <b>accuracy, validation, and operational reliability</b> across multi-source environments. Experience cleansing and standardizing data from <b>10+ disparate sources</b>, maintaining schema integrity through zero-downtime migrations, investigating discrepancies, and building automation that reduces manual rework. Strong <b>SQL and Python</b>; comfortable supporting production data processes alongside business and technical teams.
+      Applied-AI researcher and data analyst with <b>2+ years</b> building production ML pipelines and a published SEC 10-K fraud model at <b>82% accuracy</b> on a 50K+ imbalanced dataset, 11 points over NLP baselines. Author of <b>11 conference papers</b> on applied AI in finance, audit, and security, including <b>2 Best Paper Awards</b>. Experience cleansing and standardizing data from <b>10+ disparate sources</b> and maintaining schema integrity through zero-downtime migrations. Strong <b>Python, SQL, R, and SAS</b>; presents findings clearly to technical and non-technical audiences.
     </p>
   </section>
 
@@ -121,7 +123,7 @@
 
     <div class="r-job">
       <div class="r-job-head"><span class="org">Renaisons LLC</span><span class="when">June 2024 – Present</span></div>
-      <div class="r-job-sub"><span class="role">Data Analyst</span><span class="where">Dallas, TX</span></div>
+      <div class="r-job-sub"><span class="role">Senior Data Analyst</span><span class="where">Dallas, TX</span></div>
       <ul class="r-points">
         <li>Collected, cleansed, and standardized <b>1.5M+ records</b> from <b>10+ disparate</b> internal and external sources into a normalized PostgreSQL warehouse with full-text indices, establishing a trusted single source for downstream reporting and analytics.</li>
         <li>Maintained schema integrity and data rules through <b>15 zero-downtime Alembic migrations</b>, applying consistent mappings and transformations while preventing disruption to production data processes.</li>
@@ -132,10 +134,10 @@
 
     <div class="r-job">
       <div class="r-job-head"><span class="org">East Texas A&amp;M University</span><span class="when">Sep. 2023 – Sep. 2024</span></div>
-      <div class="r-job-sub"><span class="role">Graduate Research Assistant</span><span class="where">Commerce, TX</span></div>
+      <div class="r-job-sub"><span class="role">Applied AI Researcher</span><span class="where">Commerce, TX</span></div>
       <ul class="r-points">
-        <li>Co-authored <b>2 research papers</b> presented at the 25th Annual Security Conference (2026), standardizing and validating a 50,472-record imbalanced dataset drawn from public financial filings.</li>
-        <li>Built a two-stage analytical pipeline reaching <b>82% classification accuracy, 11 percentage points</b> above traditional baselines, with systematic checks to validate outputs and assess error patterns.</li>
+        <li>Engineered a two-agent fraud-classification model over a <b>fine-tuned Llama LLM</b>, fusing financial ratios with SEC 10-K signals; reached <b>82% accuracy</b> on a 50,472/421 imbalanced dataset, beating NLP baselines by <b>11 points</b>.</li>
+        <li>Fine-tuned and deployed a Llama LLM on <b>Azure</b> cloud VMs; authored or co-authored <b>11 conference papers</b> on applied AI presented at <b>5 conferences</b> in 2026, including <b>2 Best Paper Awards</b> (Academy of Business Research).</li>
       </ul>
     </div>
 
@@ -163,6 +165,7 @@
   <section class="r-sec">
     <h2>Honors &amp; Awards</h2>
     <ul class="r-awards">
+      <li><b>2× Best Paper Award</b>, Academy of Business Research Summer 2026 Conference</li>
       <li><b>1st Place</b>, TAMUC AI Hackathon (April 2023)</li>
       <li><b>1st Place</b>, 6th Annual ISACA North Texas IT Security National Competition (April 2023)</li>
       <li><b>Certifications:</b> Oracle Database SQL Certified Associate; Tableau Desktop Specialist</li>
